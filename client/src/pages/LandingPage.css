@@ -450,10 +450,30 @@
 }
 
 @media (max-width: 768px) {
+  .landing-nav {
+    flex-direction: column;
+    gap: 1rem;
+    padding: 1.5rem 1rem;
+  }
+
   .hero-title {
     font-size: 2.5rem;
   }
   
+  .hero-subtitle {
+    font-size: 1.1rem;
+  }
+
+  .hero-actions {
+    flex-direction: column;
+    width: 100%;
+    gap: 1rem;
+  }
+
+  .hero-btn {
+    width: 100%;
+  }
+
   .hero-stats {
     flex-direction: column;
     gap: 1.5rem;
@@ -462,14 +482,29 @@
   
   .landing-nav-links {
     gap: 1rem;
+    width: 100%;
+    justify-content: center;
   }
   
   .card-1 {
     left: 50%;
     transform: translateX(-50%) rotate(0deg);
+    width: 90%;
+    max-width: 320px;
   }
   
   .card-2 {
     display: none; /* Hide secondary card on small screens */
+  }
+
+  .footer-content {
+    flex-direction: column;
+    gap: 1.5rem;
+    text-align: center;
+  }
+
+  .footer-note {
+    flex-direction: column;
+    gap: 0.5rem;
   }
 }

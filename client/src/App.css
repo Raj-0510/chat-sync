@@ -1279,15 +1279,103 @@
   color: var(--text-secondary);
 }
 
+/* ─── ENHANCED MOBILE RESPONSIVENESS FOR ENTIRE APP ─── */
 @media (max-width: 768px) {
-  .chat-sidebar {
-    width: 80px;
+  /* Dashboard */
+  .dashboard-welcome h1 {
+    font-size: 1.5rem;
   }
-  .sidebar-header, .user-info, .search-bar span {
+  .stats-grid {
+    grid-template-columns: 1fr 1fr;
+    gap: 0.75rem;
+  }
+  .stat-card {
+    padding: 1rem;
+  }
+  .stat-info h3 {
+    font-size: 1.25rem;
+  }
+  .recent-item {
+    padding: 0.75rem 1rem;
+  }
+  .recent-content p {
+    font-size: 0.85rem;
+  }
+  
+  /* Chat Page */
+  .chat-sidebar {
+    width: 70px;
+  }
+  .sidebar-header {
+    padding: 1rem 0.5rem;
+  }
+  .sidebar-header h2, .user-info, .search-bar {
     display: none;
   }
   .user-item {
     justify-content: center;
+    padding: 0.75rem;
+  }
+  .user-item .user-avatar {
+    font-size: 2rem;
+    margin: 0;
+  }
+  .chat-header {
+    padding: 0.5rem 1rem;
+  }
+  .chat-messages {
     padding: 1rem;
+    gap: 0.75rem;
+  }
+  .message-bubble {
+    max-width: 85%;
+    padding: 0.6rem 0.85rem;
+    font-size: 0.9rem;
+  }
+  .chat-input {
+    padding: 0.75rem 1rem;
+    gap: 0.5rem;
+  }
+  .chat-input input {
+    padding: 0.6rem 0.85rem;
+  }
+  
+  /* Notifications */
+  .notification-panel-wrapper {
+    width: calc(100vw - 2rem);
+    right: 0;
+    left: auto;
+  }
+  .notification-item {
+    padding: 0.75rem 1rem;
+  }
+  .notification-type-badge {
+    width: 30px;
+    height: 30px;
+    font-size: 0.85rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .stats-grid {
+    grid-template-columns: 1fr;
+  }
+  .chat-sidebar {
+    width: 60px;
+  }
+  .user-item .user-avatar {
+    font-size: 1.75rem;
+  }
+  .message-bubble {
+    max-width: 90%;
+  }
+  .admin-form {
+    padding: 1.25rem;
+  }
+  .navbar-brand {
+    font-size: 1.1rem;
+  }
+  .brand-text {
+    display: none; /* Only show icon on very small screens */
   }
 }

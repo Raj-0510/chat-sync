@@ -106,6 +106,12 @@ const LandingPage = () => {
       <footer className="landing-footer">
         <div className="footer-content">
           <div className="footer-logo">ChatSync</div>
+          
+          <div className="footer-note" style={{ color: 'var(--text-muted)', fontSize: '0.85rem', display: 'flex', alignItems: 'center', gap: '0.5rem', textAlign: 'center' }}>
+            <span>⚠️</span>
+            <p style={{ margin: 0 }}><strong>Note:</strong> This is for freelancing portfolio purposes. All features listed shouldn't be taken seriously.</p>
+          </div>
+
           <p className="footer-copyright">&copy; {new Date().getFullYear()} ChatSync. All rights reserved.</p>
         </div>
       </footer>

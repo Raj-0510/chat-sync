@@ -76,6 +76,11 @@ const Dashboard = () => {
           <p>Here&apos;s what&apos;s happening today</p>
         </div>
 
+        <div className="portfolio-note" style={{ background: 'rgba(253, 203, 110, 0.1)', color: 'var(--accent-payment)', padding: '1rem', borderRadius: 'var(--radius-md)', marginBottom: '2rem', border: '1px solid rgba(253, 203, 110, 0.2)', display: 'flex', alignItems: 'center', gap: '0.5rem' }}>
+          <span style={{ fontSize: '1.25rem' }}>⚠️</span>
+          <p style={{ margin: 0, fontSize: '0.9rem' }}><strong>Note:</strong> This is for freelancing portfolio purposes. All features listed shouldn't be taken seriously.</p>
+        </div>
+
         {/* Stats cards */}
         <div className="stats-grid">
           <div className="stat-card">

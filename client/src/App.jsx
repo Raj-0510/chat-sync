@@ -6,6 +6,7 @@ import Signup from './pages/Signup';
 import Dashboard from './pages/Dashboard';
 import Admin from './pages/Admin';
 import ChatPage from './pages/ChatPage';
+import LandingPage from './pages/LandingPage';
 import { SocketProvider } from './context/SocketContext';
 import './App.css';
 
@@ -41,7 +42,8 @@ function App() {
                 </ProtectedRoute>
               }
             />
-            <Route path="*" element={<Navigate to="/login" replace />} />
+            <Route path="/" element={<LandingPage />} />
+            <Route path="*" element={<Navigate to="/" replace />} />
           </Routes>
         </BrowserRouter>
       </SocketProvider>

@@ -5,6 +5,10 @@ const jwt = require('jsonwebtoken');
  * Attaches decoded user payload to req.user: { id, role }
  */
 const verifyToken = (req, res, next) => {
+  // Bypass auth for health check endpoint
+  if (req.path === '/api/health') {
+    return next();
+  }
   try {
     const authHeader = req.headers.authorization;
 

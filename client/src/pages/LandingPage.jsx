@@ -32,6 +32,15 @@ const LandingPage = () => {
             <Link to="/signup" className="hero-btn primary-btn pulse-glow">Get Started Free</Link>
             <a href="#features" className="hero-btn secondary-btn">Explore Features</a>
           </div>
+
+          {/* Demo credentials pill for instant testing */}
+          <div className="demo-landing-pill">
+            <span>Want to test? Use demo accounts:</span>
+            <code>demo@chatsync.com</code>
+            <span className="separator">or</span>
+            <code>demo2@chatsync.com</code>
+            <span className="separator">(Password: <code>demo123</code>)</span>
+          </div>
           
           <div className="hero-stats">
             <div className="stat-item">

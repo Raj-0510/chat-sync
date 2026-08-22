@@ -45,6 +45,45 @@ const Login = () => {
           <p className="auth-subtitle">Sign in to continue to your workspace</p>
         </div>
 
+        {/* Demo credentials banner */}
+        <div className="demo-credentials-banner">
+          <div className="demo-credentials-header">
+            <strong>Testing / Trial Credentials</strong>
+          </div>
+          <p className="demo-credentials-text">
+            To test real-time chat, you can use these two demo accounts in different browser sessions:
+          </p>
+          <div className="demo-credentials-fields">
+            <div><span>Account 1:</span> <code>demo@chatsync.com</code></div>
+            <div><span>Account 2:</span> <code>demo2@chatsync.com</code></div>
+            <div><span>Password:</span> <code>demo123</code></div>
+          </div>
+          <div className="demo-autofill-group" style={{ display: 'flex', gap: '0.5rem', marginTop: '0.75rem' }}>
+            <button
+              type="button"
+              className="demo-autofill-btn"
+              onClick={() => {
+                setEmail('demo@chatsync.com');
+                setPassword('demo123');
+              }}
+              style={{ flex: 1 }}
+            >
+              Fill Account 1
+            </button>
+            <button
+              type="button"
+              className="demo-autofill-btn"
+              onClick={() => {
+                setEmail('demo2@chatsync.com');
+                setPassword('demo123');
+              }}
+              style={{ flex: 1 }}
+            >
+              Fill Account 2
+            </button>
+          </div>
+        </div>
+
         <form className="auth-form" onSubmit={handleSubmit}>
           {error && <div className="auth-error">{error}</div>}
 

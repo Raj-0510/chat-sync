@@ -58,6 +58,24 @@ const Signup = () => {
           <p className="auth-subtitle">Create your workspace account</p>
         </div>
 
+        {/* Demo credentials banner */}
+        <div className="demo-credentials-banner">
+          <div className="demo-credentials-header">
+            <strong>Testing / Trial Account</strong>
+          </div>
+          <p className="demo-credentials-text">
+            Want to test without registering? Use our pre-configured demo credentials on the login screen to chat with each other:
+          </p>
+          <div className="demo-credentials-fields">
+            <div><span>Account 1:</span> <code>demo@chatsync.com</code></div>
+            <div><span>Account 2:</span> <code>demo2@chatsync.com</code></div>
+            <div><span>Password:</span> <code>demo123</code></div>
+          </div>
+          <Link to="/login" className="demo-autofill-btn">
+            Go to Login with Demo Accounts
+          </Link>
+        </div>
+
         <form className="auth-form" onSubmit={handleSubmit}>
           {error && <div className="auth-error">{error}</div>}
 

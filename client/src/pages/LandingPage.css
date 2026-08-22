@@ -508,3 +508,37 @@
     gap: 0.5rem;
   }
 }
+
+/* --- Demo Credentials Landing Pill --- */
+.demo-landing-pill {
+  margin-top: 1.5rem;
+  display: inline-flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  padding: 0.5rem 1rem;
+  border-radius: 50px;
+  background: var(--bg-glass);
+  border: 1px solid var(--border);
+  font-size: 0.875rem;
+  color: var(--text-secondary);
+  backdrop-filter: blur(10px);
+}
+
+.demo-landing-pill span {
+  color: var(--text-secondary);
+}
+
+.demo-landing-pill code {
+  background: rgba(108, 92, 231, 0.15);
+  color: var(--text-primary);
+  padding: 0.15rem 0.5rem;
+  border-radius: 4px;
+  font-family: monospace;
+  font-size: 0.85rem;
+  border: 1px solid rgba(108, 92, 231, 0.3);
+}
+
+.demo-landing-pill .separator {
+  color: var(--text-muted);
+}

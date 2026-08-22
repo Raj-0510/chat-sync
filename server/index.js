@@ -91,8 +91,12 @@ const MONGODB_URI = process.env.MONGODB_URI || 'mongodb://localhost:27017/notifi
 
 mongoose
   .connect(MONGODB_URI)
-  .then(() => {
+  .then(async () => {
     console.log('✅ Connected to MongoDB');
+
+    // Seed demo account
+    const { seedDemoAccount } = require('./seedDemo');
+    await seedDemoAccount();
 
     server.listen(PORT, () => {
       console.log(`🚀 Server running on port ${PORT}`);
